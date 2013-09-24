@@ -20,7 +20,7 @@ body{text-align:center;}
 	/* to preserve source-order independence for Gecko */
 	.yui-b{position:relative;}
 	.yui-b{_position:static;} /* for IE < 7 */
-	#yui-main .yui-b{position:static;} 
+	#yui-main .yui-b{position:relative;} 
 
 #yui-main {width:100%;}
 .yui-t1 #yui-main,
@@ -33,7 +33,11 @@ body{text-align:center;}
 
 .yui-t1 .yui-b {
 	float:left;
-    width:12.3207em;*width:12.0106em;}
+    width:12.3207em;*width:12.0106em;
+    height: 80px;
+    border-top: 10px;
+    padding:10px 10px 10px 10px;}
+
 .yui-t1 #yui-main .yui-b{
     margin-left:13.3207em;*margin-left:13.0106em;
 }
@@ -76,6 +80,8 @@ body{text-align:center;}
 .yui-t7 #yui-main .yui-b {
 	display:block;margin:0 0 1em 0;
 }
+
+
 #yui-main .yui-b {float:none;width:auto;}
 /* GRIDS (not TEMPLATES) */
 .yui-g .yui-u, 
@@ -116,7 +122,7 @@ body{text-align:center;}
 .yui-ge:after, 
 .yui-gf:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
 #bd,
-.yui-g, 
+.yui-g{background-color: white  }
 .yui-gb, 
 .yui-gc, 
 .yui-gd, 
@@ -127,7 +133,7 @@ body{text-align:center;}
 /* Basic Element Formatting */
 
 #header{
-	height:75px;
+	height:100px;
 	background-color:#F3F2ED;
 	border-top: #FFFFFF 10px solid;
 	border-bottom: #FFFFFF 10px solid;
@@ -136,16 +142,20 @@ body{text-align:center;}
 	}
 	
 #header h1{
-	font-size:1em;
-	margin:0;
-	padding:10px;
+	font-size:2em;
+	margin:-50px;
+	padding-right:200px;
 	text-align:center;
+	padding: 10px;
 	}
 	
 #header h1 a{
 	color:#000000;
 	background-color:#F3F2ED;
+	text-align: right;
+	padding-bottom: 10px;
 	}
+
 
 .instructions {
 	height:75px;
@@ -154,7 +164,10 @@ body{text-align:center;}
 	border-bottom: #FFFFFF 10px solid;
 	margin:0;
 	padding:0;
+	text-align: left;
 }
+
+
 	
 .content{
 	height:200px;
@@ -162,16 +175,29 @@ body{text-align:center;}
 	border-top:#FFFFFF 2px solid;
 	margin:0;
 	padding:0;
-	text-align:center;
+	text-align:center;background-color: #B2FF99;
+
 	}
+
+	.content:hover{
+	background-color: red
+}
+
+.content_inner{
+	height:180px;
+	width: 180px;
+	background: green;
+	background-color: red
+}
 	
 #secondary{
-	height:50px;
+	height:60px;
 	background:#F6F0E0;
-	border-top:#FFFFFF 2px solid;
+	border-top:#FFFFFF 10px solid;
 	border-bottom: #FFFFFF 10px solid;
 	margin:0;
-	padding:0px;
+	padding:10px;
+	text-align:center;
 	}
 	
 #secondaryFull{
@@ -189,3 +215,4 @@ body{text-align:center;}
 	margin:0px;
 	padding:0px;
 	}
+
